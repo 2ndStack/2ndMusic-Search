@@ -9,7 +9,7 @@ app.message(function(client, action, data) {
 	if (action === 'search') {
 	//http://www.imdbapi.com/?t=dark%20night&plot=short&tomatoes=true
   //http://query.yahooapis.com/v1/public/yql?q=select%20*%20from%20music.track.search%20where%20keyword%3D%22kangen%20band%22&format=json&diagnostics=true&callback=cbfunc
-		var param = { format: 'json', q: 'select * from music.track.search where keyword="'+data.title+'"', diagnostics:'true', callback:'cbfunc'};
+		var param = { format: 'json', q: 'select * from music.track.search(1) where keyword="'+data.title+'"', diagnostics:'true'};
 //		if (data.year && data.year.length !== 0) {
 //			param = _.extend(param, {y: data.year});
 //		}

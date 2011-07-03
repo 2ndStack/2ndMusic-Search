@@ -6,28 +6,29 @@ var app = this;
 _.extend(exports, {
 	
 	':state': function(param) {
+		
 		var self = this;
 		self.get('header').get('pic-box').clear();
-		self.get('header').get('pic-box').add('pic', new ImageView({
+		/*self.get('header').get('pic-box').add('pic', new ImageView({
 			style: {
 				width: 84,
 				height: 84
 			}
-		}));
-		self.get('header').get('pic-box').get('pic').resource(param.Poster);
+		}));*/
+		//self.get('header').get('pic-box').get('pic').resource(param.query.results.Track.Album.Release.Image[0].url);
 		
-		self.get('header').get('title-box').get('title').label(param.Title);
-		self.get('header').get('title-box').get('year').label(param.Year);
-		self.get('header').get('title-box').get('rating').label('Rating: ' + param.Rating);
+		self.get('header').get('title-box').get('title').label(param.query.results.Track.title);
+		self.get('header').get('title-box').get('year').label(param.query.results.Track.releaseYear);
+		self.get('header').get('title-box').get('rating').label('Popularity: ' + param.query.results.Track.popularity);
 		
-		self.get('genre').label('Genre: ' + param.Genre);
-		self.get('released').label('Released: ' + param.Released);
-		self.get('rated').label('Rated: ' + param.Rated);
-		self.get('runtime').label('Runtime: ' + param.Runtime);
-		self.get('director').label('Director: ' + param.Director);
-		self.get('writer').label('Writer: ' + param.Writer);
-		self.get('actors').label('Actors: ' + param.Actors);
-		self.get('plot').label('Plot: ' + param.Plot);
+		self.get('genre').label('Album: ' + param.query.results.Track.Album.Release.title);
+		//self.get('released').label('Released: ' + param.Released);
+		//self.get('rated').label('Rated: ' + param.Rated);
+		//self.get('runtime').label('Runtime: ' + param.Runtime);
+		//self.get('director').label('Director: ' + param.Director);
+		//self.get('writer').label('Writer: ' + param.Writer);
+		//self.get('actors').label('Actors: ' + param.Actors);
+		//self.get('plot').label('Plot: ' + param.Plot);
 	},
 	
 	':keypress': function(key) {
