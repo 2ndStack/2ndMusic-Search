@@ -9,12 +9,12 @@ _.extend(exports, {
 		
 		var self = this;
 		self.get('header').get('pic-box').clear();
-		/*self.get('header').get('pic-box').add('pic', new ImageView({
+		self.get('header').get('pic-box').add('pic', new ImageView({
 			style: {
 				width: 84,
 				height: 84
 			}
-		}));*/
+		}));
 		self.get('header').get('pic-box').get('pic').resource(param.query.results.Track.Album.Release.Image[0].url);
 		
 		self.get('header').get('title-box').get('title').label(param.query.results.Track.title);
