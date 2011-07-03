@@ -14,12 +14,12 @@
 			}
 		},
 		{
-			"name": "tvFilmName",
+			"name": "tvMusicName",
 			"control": "TextView",
 			"label": "Judul Lagu"
 		},
 		{
-			"name": "ibFilmName",
+			"name": "ibMusicName",
 			"control": "InputBox",
 			style: {
 				'background-color': 'white',
