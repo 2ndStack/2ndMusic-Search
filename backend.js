@@ -9,11 +9,11 @@ app.message(function(client, action, data) {
 	if (action === 'search') {
 	//http://www.imdbapi.com/?t=dark%20night&plot=short&tomatoes=true
   //http://query.yahooapis.com/v1/public/yql?q=select%20*%20from%20music.track.search%20where%20keyword%3D%22kangen%20band%22&format=json&diagnostics=true&callback=cbfunc
-		var param = {plot: 'short', r: 'json', t: data.title, tomatoes:'true'};
-		if (data.year && data.year.length !== 0) {
-			param = _.extend(param, {y: data.year});
-		}
-		var url = "http://www.imdbapi.com/?" + QS.stringify(param);
+		var param = {format: 'json', q:'select%20*%20from%20music.track.search%20where%20keyword%3D%22'+data.title+'%22', diagnostics:'true', callback:'cbfunc'};
+//		if (data.year && data.year.length !== 0) {
+//			param = _.extend(param, {y: data.year});
+//		}
+		var url = "http://query.yahooapis.com/v1/public/yql?" + QS.stringify(param);
 		console.log('url : ' + url);
 		http.get(url, { type: 'binary' }, {
 			ok: function(data) {

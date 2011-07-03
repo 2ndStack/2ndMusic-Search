@@ -7,7 +7,7 @@ _.extend(exports, {
 		var self = this;
 		
 		self.selection = self.keySelectionWithItems([ 
-				self.get('ibFilmName'), 
+				self.get('ibMusicName'),
 				self.get('ibYear'), 
 				self.get('button-box').get('bSearch')
 			], 
@@ -25,8 +25,8 @@ _.extend(exports, {
 		self.get('button-box').get('bSearch').src(app.resourceURL('search_ho.png'));
 		self.get('button-box').get('bSearch').src(app.resourceURL('search.png'));
 		
-		self.get('ibFilmName').on('activate', function() {
-			self.get('ibFilmName').emit('keypress', 'fire');
+		self.get('ibMusicName').on('activate', function() {
+			self.get('ibMusicName').emit('keypress', 'fire');
 		});
 		
 		self.get('ibYear').on('activate', function() {
@@ -34,7 +34,7 @@ _.extend(exports, {
 		});
 		
 		self.get('button-box').get('bSearch').on('activate', function() {
-			app.msg('search', {title: self.get('ibFilmName').value(), year: self.get('ibYear').value()});
+			app.msg('search', {title: self.get('ibMusicName').value(), year: self.get('ibYear').value()});
 		});
 		app.on('connected', function() {
 			console.log('Connected to backend.');	
