@@ -1,0 +1,69 @@
+{
+	"style": {
+		"background-color": "#ebf4fb",
+		"border": 10
+	},
+
+	"contents": [
+		{
+			"name": "title",
+			"control": "TextView",
+			"label": "Find an artist",
+			"style": {
+				"font-weight":"bold"
+			}
+		},
+		{
+			"name": "tvFilmName",
+			"control": "TextView",
+			"label": "Judul Lagu"
+		},
+		{
+			"name": "ibFilmName",
+			"control": "InputBox",
+			style: {
+				'background-color': 'white',
+				width: 'fill-parent',
+				height: 25
+			}
+		},
+		{
+			"name": "tvYear",
+			"control": "TextView",
+			"label": {
+				"styles": [
+					{ "font-weight": "normal", "font-style": "italic" }
+				],
+				"contents": [
+					-1, "Year ",
+					0, "(optional)"
+				]
+			}
+		},
+		{
+			"name": "ibYear",
+			"control": "InputBox",
+			style: {
+				'background-color': 'white',
+				width: 'fill-parent',
+				height: 25
+			}
+		},
+		{
+			"name": "button-box",
+			"control": "VLayout",
+			"contents":[
+				{
+					"control": "Control",
+					style: {
+						width: 'fill-parent',
+						height: 20
+					}
+				},{
+					"name": "bSearch",
+					"control": "ImageView"
+				}
+			]
+		}
+	]
+}
