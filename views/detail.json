@@ -50,7 +50,7 @@
 		},
 		{
 			"control": "TextView",
-			"name": "genre",
+			"name": "album",
 			"style": {
 				"width": "fill-parent",
 				"border": "0 10 5 10"
@@ -82,7 +82,7 @@
 		},
 		{
 			"control": "TextView",
-			"name": "director",
+			"name": "label",
 			"style": {
 				"width": "fill-parent",
 				"border": "0 10 5 10"
@@ -98,7 +98,7 @@
 		},
 		{
 			"control": "TextView",
-			"name": "actors",
+			"name": "artist",
 			"style": {
 				"width": "fill-parent",
 				"border": "0 10 5 10"

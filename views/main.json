@@ -8,7 +8,7 @@
 		{
 			"name": "title",
 			"control": "TextView",
-			"label": "Find an artist",
+			"label": "Find Music",
 			"style": {
 				"font-weight":"bold"
 			}
@@ -27,28 +27,7 @@
 				height: 25
 			}
 		},
-		{
-			"name": "tvYear",
-			"control": "TextView",
-			"label": {
-				"styles": [
-					{ "font-weight": "normal", "font-style": "italic" }
-				],
-				"contents": [
-					-1, "Year ",
-					0, "(optional)"
-				]
-			}
-		},
-		{
-			"name": "ibYear",
-			"control": "InputBox",
-			style: {
-				'background-color': 'white',
-				width: 'fill-parent',
-				height: 25
-			}
-		},
+		
 		{
 			"name": "button-box",
 			"control": "VLayout",

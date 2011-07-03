@@ -8,7 +8,7 @@ _.extend(exports, {
 		
 		self.selection = self.keySelectionWithItems([ 
 				self.get('ibMusicName'),
-				self.get('ibYear'), 
+				//self.get('ibYear'), 
 				self.get('button-box').get('bSearch')
 			], 
 			{
@@ -29,12 +29,12 @@ _.extend(exports, {
 			self.get('ibMusicName').emit('keypress', 'fire');
 		});
 		
-		self.get('ibYear').on('activate', function() {
-			self.get('ibYear').emit('keypress', 'fire');
-		});
+		//self.get('ibYear').on('activate', function() {
+		//	self.get('ibYear').emit('keypress', 'fire');
+		//});
 		
 		self.get('button-box').get('bSearch').on('activate', function() {
-			app.msg('search', {title: self.get('ibMusicName').value(), year: self.get('ibYear').value()});
+			app.msg('search', {title: self.get('ibMusicName').value()/*, year: self.get('ibYear').value()*/});
 		});
 		app.on('connected', function() {
 			console.log('Connected to backend.');	

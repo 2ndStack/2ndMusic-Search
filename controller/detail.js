@@ -21,13 +21,13 @@ _.extend(exports, {
 		self.get('header').get('title-box').get('year').label(param.query.results.Track.releaseYear);
 		self.get('header').get('title-box').get('rating').label('Popularity: ' + param.query.results.Track.popularity);
 		
-		self.get('genre').label('Album: ' + param.query.results.Track.Album.Release.title);
+		self.get('album').label('Album: ' + param.query.results.Track.Album.Release.title);
 		//self.get('released').label('Released: ' + param.Released);
 		//self.get('rated').label('Rated: ' + param.Rated);
 		//self.get('runtime').label('Runtime: ' + param.Runtime);
-		//self.get('director').label('Director: ' + param.Director);
+		self.get('label').label('Label: ' + param.query.results.Track.Album.Release.label);
 		//self.get('writer').label('Writer: ' + param.Writer);
-		//self.get('actors').label('Actors: ' + param.Actors);
+		self.get('artist').label('Artist: ' + param.query.results.Track.Artist.name);
 		//self.get('plot').label('Plot: ' + param.Plot);
 	},
 	
