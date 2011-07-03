@@ -26,16 +26,25 @@
       <file leaf-file-name="main.json" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/views/main.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="15" column="9" selection-start="214" selection-end="214" vertical-scroll-proportion="-1.5357143">
+            <state line="15" column="9" selection-start="214" selection-end="214" vertical-scroll-proportion="-10.75">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="main.js" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="main.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/controller/main.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="36" column="57" selection-start="1090" selection-end="1090" vertical-scroll-proportion="0.5582255">
+            <state line="36" column="57" selection-start="1090" selection-end="1090" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="backend.js" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/backend.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="11" column="40" selection-start="535" selection-end="535" vertical-scroll-proportion="0.1922366">
               <folding />
             </state>
           </provider>
@@ -52,8 +61,8 @@
     <option name="changedFiles">
       <list>
         <option value="$PROJECT_DIR$/views/main.json" />
-        <option value="$PROJECT_DIR$/backend.js" />
         <option value="$PROJECT_DIR$/controller/main.js" />
+        <option value="$PROJECT_DIR$/backend.js" />
       </list>
     </option>
   </component>
@@ -252,23 +261,23 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/backend.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="39" column="30" selection-start="1359" selection-end="1359" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/views/main.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="9" selection-start="214" selection-end="214" vertical-scroll-proportion="-1.5357143">
+        <state line="15" column="9" selection-start="214" selection-end="214" vertical-scroll-proportion="-10.75">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/controller/main.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="36" column="57" selection-start="1090" selection-end="1090" vertical-scroll-proportion="0.5582255">
+        <state line="36" column="57" selection-start="1090" selection-end="1090" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="40" selection-start="535" selection-end="535" vertical-scroll-proportion="0.1922366">
           <folding />
         </state>
       </provider>
