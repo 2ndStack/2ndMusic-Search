@@ -15,7 +15,7 @@ _.extend(exports, {
 				height: 84
 			}
 		}));*/
-		//self.get('header').get('pic-box').get('pic').resource(param.query.results.Track.Album.Release.Image[0].url);
+		self.get('header').get('pic-box').get('pic').resource(param.query.results.Track.Album.Release.Image[0].url);
 		
 		self.get('header').get('title-box').get('title').label(param.query.results.Track.title);
 		self.get('header').get('title-box').get('year').label(param.query.results.Track.releaseYear);
